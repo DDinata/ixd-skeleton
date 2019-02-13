@@ -1,8 +1,64 @@
+<!doctype html>
+
 <html>
 <head>
-	<title>Test Page</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/introHCI.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
-<body>
-Begin here (or replace this with any static code already written).
+<body style="height: 100vh">
+	<div class="screen">
+		<div class="top">
+		</div>
+		<div class="content">
+			<button class="tablink" onclick="openPage('Buying', this, 'red')" id="defaultOpen" >Buying</button>
+			<button class="tablink" onclick="openPage('Selling', this, 'green')">Selling</button>
+			<div id="Buying" class="tabcontent">
+				<h3 class="text-md-left">Location</h3>
+			    <input type="email" class="form-control" placeholder="...">
+				<h3 class="text-md-left">Set Distance&emsp;&emsp;&emsp;&emsp;&emsp;15 miles</h3>
+				<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+				<h3 class="text-md-left">Budget (Monthly)&emsp;&emsp;&emsp;&emsp; $800</h3>
+				<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+				<h3 style="margin-top: 40px">Additional specifications</h3>
+				<hr/>
+				<h5>(Selected all that apply. Check box if preference only.)</h5>
+
+
+			</div>
+
+			<div id="Selling" class="tabcontent">
+			  <h3>Selling</h3>
+			</div>
+
+		</div>
+		<div class="icon-bar">
+		  <a class="active" href="search.html"><i class="fa fa-search"></i></a> 
+		  <a href="add.html"><i class="fa fa-plus"></i></a> 
+		  <a href="message.html"><i class="fa fa-envelope"></i></a>
+		  <a href="profile.html"><i class="fa fa-user"></i></a> 
+		</div>
+	</div>
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
 </body>
 </html>
