@@ -8,11 +8,11 @@
 
 .top  {
      background-color: gray;
-     height: 12%;
+     height: 8vh;
 }
 
 .content {
-     min-height: 77%;
+     min-height: 100vh;
      background-color: white;
 }
 
@@ -43,7 +43,7 @@ hr {
 
 .icon-bar {
   max-width: 100%; /* Full-width */
-  min-height: 11%;
+  min-height: 10vh;
   background-color: #555; /* Dark-grey background */
   overflow: auto; /* Overflow due to float */
 }
@@ -178,4 +178,40 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
+}
+
+.navbar{
+  height: 8vh;
+}
+
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+    height: 100%;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+    width: 24.7%;
+    height: 100%;
+}
+
+li > a {
+    height: 100%;
+    margin: 0px;
+
+}
+
+li > a > i {
+    margin-top: ;
+    height: 100%;
+    width: 100%;
+    margin-top: 1vh;
+}
+
+li > a > i.fa {
+    font-size: 4vh; 
 }
