@@ -1,8 +1,6 @@
-var sellers = require('./../public/data/sellers.json');
-
 
 exports.view = function(req, res){
-  res.render('addlisting', {
+  res.render('addListing', {
     'additional-specs': [
       { 'name': 'Pets',
         'id': 'pets'
@@ -19,3 +17,10 @@ exports.view = function(req, res){
     ]
   });
 };
+
+exports.addSeller = function(req, res) {
+  var sellers = require('./../public/data/sellers.json');
+
+  console.log(req.body.location);
+  res.end();
+}

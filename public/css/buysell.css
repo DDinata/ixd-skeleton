@@ -19,6 +19,15 @@
   margin-top: 3vh;
 }
 
-.inputfield {
-    height: 4vh;
+input[type="text"] {
+    font-size: 45px; 
+}
+
+input[type="number"] {
+    margin-top: 1vh;
+    font-size: 45px; 
+}
+
+textarea.form-control {
+    font-size: 35px;
 }
