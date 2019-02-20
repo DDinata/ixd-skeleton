@@ -1,0 +1,17 @@
+{
+  "additional-specs": 
+  [
+    { "title": "Pets",
+      "name": "pets"
+    },
+    { "title": "Private Bathroom",
+      "name": "private-bathroom"
+    },
+    { "title": "Gym",
+      "name": "gym"
+    },
+    { "title": "Low noise level",
+      "name": "low-noise"
+    }
+  ]
+}
