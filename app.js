@@ -46,6 +46,7 @@ app.get('/addListing', addListing.view);
 app.get('/message', message.view);
 app.get('/profile', profile.view);
 
+app.post('/login', index.login)
 app.post('/addSeller', addListing.addSeller);
 app.post('/addBuyer', addListing.addBuyer);
 

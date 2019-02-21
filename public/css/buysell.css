@@ -31,3 +31,8 @@ input[type="number"] {
 textarea.form-control {
     font-size: 35px;
 }
+
+button[type="submit"] {
+  font-variant-caps: all-small-caps;
+  font-size: 45px;
+}

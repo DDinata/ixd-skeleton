@@ -1,12 +1,13 @@
 
 exports.view = function(req, res){
-  var specs = require('./../public/data/specs.json');
+  var specs = require('./../public/data/data.json');
   res.render('addListing', specs);
+  console.log(specs)
 };
 
 exports.addSeller = function(req, res) {
   var fs = require('fs');
-  var listings = require('./../public/data/listings.json');
+  var listings = require('./../public/data/data.json');
   listing = {};
   listings["sellers"].push(listing);
   // var jsonData = JSON.stringify(listings);
@@ -16,7 +17,7 @@ exports.addSeller = function(req, res) {
   //     }
   // });
   console.log(listings["sellers"]);
-  console.log(req.body.single);
+  console.log(req.body);
   res.end();
 }
 

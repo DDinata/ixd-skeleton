@@ -195,7 +195,7 @@ input:checked + .slider:before {
 .navbar-nav > li {
     display: inline-block;
     float:none;
-    width: 24.7%;
+    width: 33%;
     height: 100%;
 }
 
