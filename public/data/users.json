@@ -1,9 +1,0 @@
-{
-	"current_user": "test_account",
-	"users": {
-		"test_account": {
-			"phone": 1234567890,
-			"email": "test@gmail.com" 
-		}
-	}
-}

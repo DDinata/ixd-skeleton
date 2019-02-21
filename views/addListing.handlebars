@@ -1,0 +1,169 @@
+<!doctype html>
+
+<html>
+<head>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/nav.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/buysell.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+
+
+</head>
+
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top"></nav>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs buysell" role="tablist">
+    <li class="active"><a href="#buying" role="tab" data-toggle="tab">Buying</a></li>
+    <li><a href="#selling" role="tab" data-toggle="tab">Selling</a></li>
+  </ul>
+</li>
+
+<!-- Tab panes -->
+<div class="tab-content">
+
+
+  <div class="tab-pane active" id="buying">
+    <form role="form" class="form-horizontal" method="POST" action="/addBuyer">
+      <div class="form-group">
+        <label class="col-sm-12" for="name"><h1>Name</h1></label>
+        <div class="col-sm-12"><input type="text" class="form-control input-lg inputfield" name="name" placeholder="Student looking for an apartment"></div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-12" for="location"><h1>Location</h1></label>
+        <div class="col-sm-12"><input type="text" class="form-control input-lg inputfield" name="location" placeholder="Los Angeles"></div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-9" for="price"><h1>Price</h1></label>
+        <div class="col-sm-1"><h1 class="pull-right">$</h1></div>
+        <div class="col-sm-2"><input type="number" class="form-control input-lg inputfield" name="price" placeholder="500"></div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-6"><h1>Room Type</h1></div>
+        <div class = "col-sm-2">
+          <label for="single"><h2>Single</h2></label>
+          <input type="checkbox" checked data-toggle="toggle" data-size="large" name="single" data-on="Yes" data-off="No"> 
+        </div>
+        <div class = "col-sm-2">
+          <label for="double"><h2>Double</h2></label>
+          <input type="checkbox" checked data-toggle="toggle" data-size="large" name="double" data-on="Yes" data-off="No"> 
+        </div>
+        <div class = "col-sm-2">
+          <label for="triple"><h2>Triple</h2></label>
+          <input type="checkbox" checked data-toggle="toggle" data-size="large" name="triple" data-on="Yes" data-off="No"> 
+        </div>
+      </div>
+      <h2>Additional Specifications</h2>
+      <hr>
+      <h2>(Select all that apply. Toggle "need" off if preference only.)</h2>
+      <div>
+        <div class="col-sm-8"></div>
+        <div class="col-sm-2"><h1>Y/N</h1></div>
+        <div class="col-sm-2"><h1>Need</h1></div>
+      </div>
+      {{#each additional-specs}}
+      <div class="form-group">
+        <label class="col-sm-8" for="{{name}}"><h1>{{title}}</h1></label>
+        <div class="col-sm-2">
+          <input type="checkbox" checked data-toggle="toggle" data-size="large" name="{{name}}" data-on="Yes" data-off="No"> 
+        </div>
+        <div class="col-sm-2">
+          <input type="checkbox" checked data-toggle="toggle" data-size="large" name="{{name}}-need" data-on="Need" data-off="No"> 
+        </div>
+      </div>
+      {{/each}}
+      <div class="form-group">
+        <label class="col-sm-12" for="description"><h1>Description</h1></label>
+        <textarea class="form-control" name="description" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-12">
+          <button type="submit" class="btn btn-info btn-block">Submit</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+
+
+  <div class="tab-pane" id="selling">
+    <form role="form" class="form-horizontal" method="POST" action="/addSeller">
+      <div class="form-group">
+        <label class="col-sm-12" for="name"><h1>Name</h1></label>
+        <div class="col-sm-12"><input type="text" class="form-control input-lg inputfield" name="name" placeholder="Spacious Apartment"></div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-12" for="location"><h1>Location</h1></label>
+        <div class="col-sm-12"><input type="text" class="form-control input-lg inputfield" name="location" placeholder="Los Angeles"></div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-9" for="price"><h1>Price</h1></label>
+        <div class="col-sm-1"><h1 class="pull-right">$</h1></div>
+        <div class="col-sm-2"><input type="number" class="form-control input-lg inputfield" name="price" placeholder="500"></div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-6"><h1>Room Type</h1></div>
+        <div class = "col-sm-2">
+          <label for="single"><h2>Single</h2></label>
+          <input type="checkbox" checked data-toggle="toggle" data-size="large" name="single" data-on="Yes" data-off="No"> 
+        </div>
+        <div class = "col-sm-2">
+          <label for="double"><h2>Double</h2></label>
+          <input type="checkbox" checked data-toggle="toggle" data-size="large" name="double" data-on="Yes" data-off="No"> 
+        </div>
+        <div class = "col-sm-2">
+          <label for="triple"><h2>Triple</h2></label>
+          <input type="checkbox" checked data-toggle="toggle" data-size="large" name="triple" data-on="Yes" data-off="No"> 
+        </div>
+      </div>
+      <h2>Additional Specifications</h2>
+      <hr>
+      <h2>(Select all that apply. Toggle "need" off if preference only.)</h2>
+      <div>
+        <div class="col-sm-8"></div>
+        <div class="col-sm-2"><h1>Y/N</h1></div>
+        <div class="col-sm-2"><h1>Need</h1></div>
+      </div>
+      {{#each additional-specs}}
+      <div class="form-group">
+        <label class="col-sm-8" for="{{name}}"><h1>{{title}}</h1></label>
+        <div class="col-sm-2">
+          <input type="checkbox" checked data-toggle="toggle" data-size="large" name="{{name}}" data-on="Yes" data-off="No"> 
+        </div>
+        <div class="col-sm-2">
+          <input type="checkbox" checked data-toggle="toggle" data-size="large" name="{{name}}-need" data-on="Need" data-off="No"> 
+        </div>
+      </div>
+      {{/each}}
+      <div class="form-group">
+        <label class="col-sm-12" for="description"><h1>Description</h1></label>
+        <textarea class="form-control" name="description" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-12">
+          <button type="submit" class="btn btn-info btn-block">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+  <ul class="nav navbar-nav">
+    <li><a href="search"><i class="fa fa-search"></i></a></li>
+    <li class="active"><a href="addListing"><i class="fa fa-plus"></i></a></li>
+    <li><a href="profile"><i class="fa fa-user"></i></a></li>
+  </ul>
+</nav>
+
+</body>
+</html>
