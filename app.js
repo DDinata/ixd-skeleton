@@ -45,12 +45,15 @@ app.get('/addListing', addListing.view);
 app.get('/message', message.view);
 app.get('/profile', profile.view);
 app.get('/success', addListing.success)
+app.get('/listing-:type-:name', search.listing);
+app.get('/profile-:username', profile.other)
 
 app.post('/login', index.login)
 app.post('/addSeller', addListing.addSeller);
 app.post('/addBuyer', addListing.addBuyer);
 app.post('/listSellers', search.listSellers);
 app.post('/listBuyers', search.listBuyers);
+
 
 // Example route
 // app.get('/users', user.list);

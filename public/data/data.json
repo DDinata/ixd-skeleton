@@ -17,6 +17,7 @@
       "gym-need": "on",
       "low-noise": "on",
       "low-noise-need": "on",
+      "type": "sellers",
       "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
     },
         {
@@ -35,10 +36,11 @@
       "gym-need": "on",
       "low-noise": "on",
       "low-noise-need": "on",
+      "type": "sellers",
       "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
     },
         {
-      "name": "listing2sell",
+      "name": "listing3sell",
       "username": "David",
       "location": "San Diego",
       "price": 800,
@@ -53,6 +55,7 @@
       "gym-need": "on",
       "low-noise": "on",
       "low-noise-need": "on",
+      "type": "sellers",
       "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
     }
   ],
@@ -74,10 +77,11 @@
       "gym-need": "on",
       "low-noise": "on",
       "low-noise-need": "on",
+      "type": "buyers",
       "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
     },
     {
-      "name": "listing1buy",
+      "name": "listing2buy",
       "username": "David",
       "location": "San Diego",
       "price": 800,
@@ -92,10 +96,11 @@
       "gym-need": "on",
       "low-noise": "on",
       "low-noise-need": "on",
+      "type": "buyers",
       "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
     },
     {
-      "name": "listing1buy",
+      "name": "listing3buy",
       "username": "David",
       "location": "San Diego",
       "price": 800,
@@ -110,6 +115,7 @@
       "gym-need": "on",
       "low-noise": "on",
       "low-noise-need": "on",
+      "type": "buyers",
       "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
     }
   ], 
@@ -131,10 +137,12 @@
   "current_user": "test_account",
   "users": {
     "test_account": {
+      "name": "test_account",
       "phone": 1234567890,
       "email": "test@gmail.com" 
     },
     "David": {
+      "name": "David",
       "phone": 9999999999,
       "email": "ddinata@ucsd.edu"
     }

@@ -2,17 +2,16 @@
 
 <html>
 <head>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/nav.css" rel="stylesheet">
+    <link href="/css/nav.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
-    <link href="css/buysell.css" rel="stylesheet">
-    <link href="css/listings.css" rel="stylesheet">
+    <link href="/css/buysell.css" rel="stylesheet">
+    <link href="/css/listings.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="js/nav.js"></script>
+    <script src="/js/nav.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 
@@ -20,16 +19,25 @@
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top"></nav>
-    {{#each this}}
-    <a class="card border-primary mb-3" href="/listing-{{type}}-{{name}}">
-      <div class="card-body" href="/search">
-        <p class="card-title">{{name}}</p>
-        <p class="card-text text-muted">{{description}}</p>
-        <div class="d-inline">{{location}}</div>
-        <div class="d-inline pull-right">${{price}}</div>
-      </div>
-    </a>
-    {{/each}}
+    <div style="margin: 4vh 2vh 2vh">
+        <p style="font-size:60px">{{name}}</p>
+        <div class="panel panel-default">
+            <div class="panel-body" style="padding-top:2vh">
+                <div class="col-sm-6">
+                    <h1><span class="glyphicon glyphicon-usd"></span> {{price}}</h1>
+                    <h1><span class="glyphicon glyphicon-pushpin"></span> {{location}}</h1>
+                </div>
+                <div class="col-sm-3"></div>
+                <div class="col-sm-3"><img src="images/default-user.png" alt="Avatar" style="width:80%;height:80%"></div>
+                <p style="font-size:40px;" >{{description}}</p>
+            </div>
+        </div>
+        <a href="/profile-{{username}}" class="pull-right" style="font-size:45px">Contact {{username}}</a>
+        <hr style="margin-top: 6vh">
+
+
+    </div>
+
     <nav class="navbar navbar-inverse navbar-fixed-bottom">
         <ul class="nav navbar-nav">
           <li class="active"><a href="search"><i class="fa fa-search"></i></a></li>

@@ -8,6 +8,7 @@ exports.addSeller = function(req, res) {
   var fs = require('fs');
   var listings = require('./../public/data/data.json');
   listing = req.body;
+  listing["type"] = "seller";
   listing["username"] = listings["current_user"];
   listings["sellers"].push(listing);
   res.redirect('/success');
@@ -18,6 +19,7 @@ exports.addBuyer = function(req, res) {
   var listings = require('./../public/data/data.json');
   listing = req.body;
   listing["username"] = listings["current_user"];
+  listing["type"] = "buyer";
   listings["buyers"].push(listing);
   res.redirect('/success');
 }
