@@ -10,5 +10,6 @@ exports.view = function(req, res){
 exports.login = function(req, res) {
   var user = require('./../public/data/data.json');
   user["current-user"] = req.body.uname;
+  console.log(user);
   res.redirect('/profile');
 }

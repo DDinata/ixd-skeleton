@@ -1,19 +1,58 @@
 {
   "sellers":
   [
-
     {
       "name": "listing1sell",
       "username": "David",
       "location": "San Diego",
       "price": 800,
-      "single": true,
-      "double": true,
-      "triple": true,
-      "pets": [true, false],
-      "private-bathroom": [true, false],
-      "gym": [true, false],
-      "low-noise": [true, false],
+      "single": "on",
+      "double": "on",
+      "triple": "on",
+      "pets": "on",
+      "pets-need": "on",
+      "private-bathroom": "on",
+      "private-bathroom-need": "on",
+      "gym": "on",
+      "gym-need": "on",
+      "low-noise": "on",
+      "low-noise-need": "on",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+    },
+        {
+      "name": "listing2sell",
+      "username": "David",
+      "location": "San Diego",
+      "price": 800,
+      "single": "on",
+      "double": "on",
+      "triple": "on",
+      "pets": "on",
+      "pets-need": "on",
+      "private-bathroom": "on",
+      "private-bathroom-need": "on",
+      "gym": "on",
+      "gym-need": "on",
+      "low-noise": "on",
+      "low-noise-need": "on",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+    },
+        {
+      "name": "listing2sell",
+      "username": "David",
+      "location": "San Diego",
+      "price": 800,
+      "single": "on",
+      "double": "on",
+      "triple": "on",
+      "pets": "on",
+      "pets-need": "on",
+      "private-bathroom": "on",
+      "private-bathroom-need": "on",
+      "gym": "on",
+      "gym-need": "on",
+      "low-noise": "on",
+      "low-noise-need": "on",
       "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
     }
   ],
@@ -24,13 +63,54 @@
       "username": "David",
       "location": "San Diego",
       "price": 800,
-      "single": true,
-      "double": true,
-      "triple": true,
-      "pets": [true, false],
-      "private-bathroom": [true, false],
-      "gym": [true, false],
-      "low-noise": [true, false]
+      "single": "on",
+      "double": "on",
+      "triple": "on",
+      "pets": "on",
+      "pets-need": "on",
+      "private-bathroom": "on",
+      "private-bathroom-need": "on",
+      "gym": "on",
+      "gym-need": "on",
+      "low-noise": "on",
+      "low-noise-need": "on",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+    },
+    {
+      "name": "listing1buy",
+      "username": "David",
+      "location": "San Diego",
+      "price": 800,
+      "single": "on",
+      "double": "on",
+      "triple": "on",
+      "pets": "on",
+      "pets-need": "on",
+      "private-bathroom": "on",
+      "private-bathroom-need": "on",
+      "gym": "on",
+      "gym-need": "on",
+      "low-noise": "on",
+      "low-noise-need": "on",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+    },
+    {
+      "name": "listing1buy",
+      "username": "David",
+      "location": "San Diego",
+      "price": 800,
+      "single": "on",
+      "double": "on",
+      "triple": "on",
+      "pets": "on",
+      "pets-need": "on",
+      "private-bathroom": "on",
+      "private-bathroom-need": "on",
+      "gym": "on",
+      "gym-need": "on",
+      "low-noise": "on",
+      "low-noise-need": "on",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
     }
   ], 
   "additional-specs": 
@@ -53,6 +133,10 @@
     "test_account": {
       "phone": 1234567890,
       "email": "test@gmail.com" 
+    },
+    "David": {
+      "phone": 9999999999,
+      "email": "ddinata@ucsd.edu"
     }
   }
 
