@@ -5,7 +5,7 @@
 
 exports.view = function(req, res){
   var users = require('./../public/data/data.json');
-  var current = users["current_user"];
+  var current = users["current-user"];
   var user = users["users"][current];
   console.log(user);
   res.render('profile', user);
