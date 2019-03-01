@@ -41,6 +41,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', index.view);
 app.get('/search', search.view);
+app.get('/searchB', search.viewB)
 app.get('/addListing', addListing.view);
 app.get('/message', message.view);
 app.get('/profile', profile.view);

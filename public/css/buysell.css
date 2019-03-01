@@ -36,3 +36,6 @@ button[type="submit"] {
   font-variant-caps: all-small-caps;
   font-size: 45px;
 }
+
+input[type='radio'] { transform: scale(3); }
+

@@ -4,6 +4,11 @@ exports.view = function(req, res){
   res.render('search', specs);
 };
 
+exports.viewB = function(req, res){
+  var specs = require('./../public/data/data.json');
+  res.render('searchB', specs);
+};
+
 exports.listSellers = function(req, res) {
   var listings = require('./../public/data/data.json');
   var list = listings["sellers"];
