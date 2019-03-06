@@ -1,11 +1,13 @@
 
 exports.view = function(req, res){
   var specs = require('./../public/data/data.json');
+  specs['alt'] = false;
   res.render('search', specs);
 };
 
 exports.viewB = function(req, res){
   var specs = require('./../public/data/data.json');
+  specs['alt'] = true;
   res.render('searchB', specs);
 };
 
