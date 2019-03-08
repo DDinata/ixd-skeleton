@@ -44,7 +44,7 @@ hr {
 .icon-bar {
   max-width: 100%; /* Full-width */
   min-height: 10vh;
-  background-color: #555; /* Dark-grey background */
+  background-color: #FF8B40; /* Dark-grey background */
   overflow: auto; /* Overflow due to float */
 }
 
@@ -60,7 +60,7 @@ hr {
 }
 
 .icon-bar a:hover {
-  background-color: #000; /* Add a hover color */
+  background-color: #fff; /* Add a hover color */
   min-height: 100%;
 }
 
@@ -182,7 +182,22 @@ input:checked + .slider:before {
 
 .navbar{
   height: 8vh;
+  /*background-color: #FF8B40;*/
+  background-color: #ff7049;
 }
+
+/* changes color of navbar icons */
+.navbar-inverse .navbar-nav>li>a {
+  color: #ffe0ca;
+}
+
+/* changes color of active navbor icon */
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  color: #fff;
+  /*background-color: #FFA773;*/
+  background-color: #FF9367;
+}
+
 
 .navbar-nav {
     float:none;
@@ -215,4 +230,78 @@ li > a > i {
 
 li > a > i.fa {
     font-size: 4vh; 
+}
+
+/* toggle button ON color */
+.toggle-on.btn-lg {
+  background-color: #49a9cc;
+}
+
+/* active buying/selling tab styling */
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  color: #4999b7;
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
+
+/* buying/selling tab styling */
+.nav-tabs > li > a {
+  font-family: Tahoma;
+  font-variant: all-petite-caps;
+  font-size: 450%;
+  font-weight: normal;
+  letter-spacing: 5px;
+  padding: 5%;
+  color: #555;
+}
+
+/* input box text styling */
+input[type="text"] {
+  font-size: 45px;
+  font-style: italic;
+}
+
+/* input box styling */
+.input-lg {
+  height: 60px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+
+/* adding padding for overall body text 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.3%;
+}*/
+
+form {
+  display: block;
+  margin-top: 0em;
+  padding: 1%;
+  -webkit-border-vertical-spacing: 2px;
+}
+
+/* modifying the description text box size/alignment */
+textarea.form-control {
+  width: 97.5%;
+  margin: 0 auto;
+}
+
+/* telephone/mail button color */
+.glyphicon-earphone:before {
+  content: "\e182";
+  color: #ff7049;
+  font-size: 120%;
+}
+
+.glyphicon-envelope:before {
+  content: "\2709";
+  color: #ff7049;
+  font-size: 120%;
 }
