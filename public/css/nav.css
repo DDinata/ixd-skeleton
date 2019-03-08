@@ -257,11 +257,11 @@ li > a > i.fa {
   color: #555;
 }
 
-/* input box text styling */
+/* input box text styling 
 input[type="text"] {
   font-size: 45px;
   font-style: italic;
-}
+}*/
 
 /* input box styling */
 .input-lg {
