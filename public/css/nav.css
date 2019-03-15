@@ -243,7 +243,9 @@ li > a > i.fa {
   cursor: default;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-bottom-color: transparent;
+  border-bottom-color: #ff7049;
+  border-bottom-width: 8px;
+  transition: .3s ease-in-out;
 }
 
 /* buying/selling tab styling */
@@ -304,4 +306,21 @@ textarea.form-control {
   content: "\2709";
   color: #ff7049;
   font-size: 120%;
+}
+
+/* change nav header text style */
+.topbarText {
+  font-size: 60px;
+  color: white;
+  font-family: Tahoma;
+  letter-spacing: 4px;
+  padding-top: 2%;
+}
+
+/* submit button */
+button[type="submit"] {
+  font-size: 40px;
+  letter-spacing: 2px;
+  border-radius: 50px;
+  padding: 1%;
 }
