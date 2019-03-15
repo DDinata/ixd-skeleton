@@ -33,7 +33,6 @@ textarea.form-control {
 }
 
 button[type="submit"] {
-  font-variant-caps: all-small-caps;
   font-size: 45px;
 }
 
