@@ -19,12 +19,26 @@
       window.history.back();
     }
     </script>
+    <style>
+        img {
+            float: left;
+            width:52vh;
+            height:48vh;
+            margin-bottom:2vh;
+           
+
+        }
+    </style>
 
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top"></nav>
+
     <div style="margin: 4vh 2vh 2vh">
         <p style="font-size:60px">{{name}}</p>
+        {{#if image}}
+        <img src="{{image}}"> 
+        {{/if}}
         <div class="panel panel-default">
             <div class="panel-body" style="padding-top:2vh">
                 <div class="col-sm-6">

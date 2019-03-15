@@ -18,6 +18,7 @@
       "low-noise": "on",
       "low-noise-need": "on",
       "type": "sellers",
+      "image": "https://www.w3schools.com/css/pineapple.jpg",
       "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
     },
         {
@@ -37,6 +38,7 @@
       "low-noise": "on",
       "low-noise-need": "on",
       "type": "sellers",
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/0f/f2/d6/f6/zimmer-1-stock-treppe.jpg",
       "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
     },
         {
@@ -56,6 +58,7 @@
       "low-noise": "on",
       "low-noise-need": "on",
       "type": "sellers",
+      "image": "http://realapartmentsbudapest.com/wp-content/uploads/2018/05/7-1-1030x687.jpg",
       "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
     }
   ],

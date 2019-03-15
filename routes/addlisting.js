@@ -10,6 +10,7 @@ exports.addSeller = function(req, res) {
   listing = req.body;
   listing["type"] = "seller";
   listing["username"] = listings["current_user"];
+  listing["image"] = "https://weeks.com.au/wp-content/themes/weeksbg/assets/svg/footer-home-icon.svg";
   listings["sellers"].push(listing);
   res.redirect('/success');
 }

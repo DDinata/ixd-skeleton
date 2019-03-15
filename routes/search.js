@@ -13,10 +13,10 @@ exports.viewB = function(req, res){
 
 exports.listSellers = function(req, res) {
   var listings = require('./../public/data/data.json');
-  var list = listings["sellers"];
-  var filtered = list.filter(function (el) {
-    return "name" in el; 
-  });
+  let list = listings['sellers'];
+  // var filtered = list.filter(function (el) {
+  //   return "name" in el; 
+  // });
   console.log(list);
   res.render('listings', list);
 };

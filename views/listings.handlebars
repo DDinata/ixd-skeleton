@@ -15,7 +15,17 @@
     <script src="js/nav.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <style>
+        img {
+            float: left;
+            width:12vh;
+            height:12vh;
+            margin-top:2vh;
+            margin-right:2vh;
+            margin-left:1vh; 
 
+        }
+    </style>
 
 </head>
 <body>
@@ -23,6 +33,9 @@
     {{#each this}}
     <a class="card border-primary mb-3" href="/listing-{{type}}-{{name}}">
       <div class="card-body" href="/search">
+        {{#if image}}
+        <img src="{{image}}"> 
+        {{/if}}
         <p class="card-title">{{name}}</p>
         <p class="card-text text-muted">{{description}}</p>
         <div class="d-inline">{{location}}</div>
@@ -39,4 +52,26 @@
     </nav>   
 </body>
 
+<script type="text/javascript">
+    let x = document.getElementsByClassName("card-text");
+
+    for (var i = 0; i < x.length; i++) { 
+        if (x[i].innerText.length > 120) {
+     
+            x[i].innerText = x[i].innerText.substring(0,100) + '...';
+        }
+    }
+
+    let cards = document.getElementsByClassName("card");
+    let b = document.getElementsByTagName('body');
+    let cl = cards.length;
+    for (var i = 0; i < cl; i++) {
+        let l = cards[i].children[0].children[2].innerText;
+        if(l.length < 1) {
+            cards[i].parentNode.removeChild(cards[i]);
+            i--;
+        }
+    }
+
+</script>
 </html>
